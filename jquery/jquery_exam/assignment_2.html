@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css" type="text/css" media="all" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				
+				$('#date_form').submit(function(){
+					fromdate = $('#fromdate').val();
+					todate = $('#todate').val();
+					$('#date_form').before('<p>You\'ve selected dates between ' + fromdate + ' and ' + todate + '</p>');
+					return false;
+				});
+
+				$('#fromdate').datepicker();
+				$('#todate').datepicker();
+			});
+		</script>
+	</head>
+	<body>
+		<div id="main_content">
+			<form id="date_form" action="new_inquiry.php" method="post">
+				<label for="fromdate">From:</label>
+				<input type="text" id="fromdate" name="fromdate" />
+				<label for="todate">To:</label>
+				<input type="text" id="todate" name="todate" />
+				<input type="submit" id="date_submit" value="Submit" />
+			</form>
+		</div>
+	</body>
+</html>

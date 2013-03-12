@@ -1,0 +1,17 @@
+1.
+michael made the first commit on January 12th 2013
+
+2.
+/codingdojo/web/img/coding_dojo.jpg
+
+3.
+Added the logo for CodingDojo on the website
+
+4.
+<img src="img/coding_dojo.jpg" alt="Coding Dojo" />
+
+5.
+michael made the last change on Sat, 12 Jan 2013
+
+6.
+michael added line 18 and line 25

@@ -1,0 +1,70 @@
+<DOCTYPE HTML>
+<html>
+	<head>
+		<title>Lubricants</title>
+		<meta name="keywords" content="Lubricants, Automotive, Commercial, Industrial, Diesel" />
+		<meta name="keywords" content="A heritage of specializing in lubricating automobiles" />
+		<link rel="stylesheet" type="text/css" href="css/screen4.css" />
+	</head>
+	<body>
+		<div id="header" class="wrapper">
+			<img class="logo" src="images/logo.gif" alt="lubricants logo">
+			<h2>CALL TOLL FREE 1-800-772-5823</h2>
+			<div class="clear"></div>
+			<div id="nav">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Market Segments</a></li>
+					<li><a href="">Services</a></li>
+					<li><a href="">Products</a></li>
+					<li><a href="">Promotions</a></li>
+					<li><a href="">Market Area</a></li>
+					<li><a href="">Market Information</a></li>
+				</ul>
+			</div><!-- end nav -->
+		</div><!-- end header -->
+		<div id="main_content">
+			<div id="page_wrapper" class="wrapper">
+				<div id="intro">
+					<img src="images/warehouse.gif" alt="lubricants warehouse">
+					<div id="about">
+						<h1 class="title_banner">ABOUT PPC LUBRICANTS</h1>
+						<h2>A Heritage of Specializing in Lubricants</h2>
+						<p>For over 40 years, PPC Lubricants has earned a solid reputation for offering high quality products and services that improve your business. How? By providing customer retention programs/products for installers and products and services that increase equipment life and enhance the efficiency of all equipment whether it be <span class="main_topics">Automotive, Heavy Duty Commercial, or Industrial</span> in its application.</p>
+						<p>At <span class="main_topics">PPC Lubricants</span>, we take tremendous pride in providing the highest level of Service. When you call our toll free numbers you will be greeted by a staff that is knowledgeable and experienced in the various lubricants that we carry. Each customer service representative receives industry specific training on the latest advancements in <span class="main_topics">lubrication technology</span> including changing equipment and OEM requirements.</p>
+					</div><!-- end about -->
+					<div class="clear"></div>
+				</div><!-- end intro -->
+				<img class="bulk_img" src="images/logo_small.gif" alt"lubricants bite size logo">
+				<p class="bulk">PPC now has Bulk Delivery/Squirt Fill capabilities for DEF</p>
+				<div id="company_sectors">
+						<div class="main_categories">
+							<h3 class="title_banner">AUTOMOTIVE</h3>
+							<img src="images/automotive.gif" alt="automotive">
+							<p>The Automotive Market requires a different set of tools in order to succedd. PPC Lubricants offers various programs that are customized to each cutomer in...</p>
+							<a class="read_more_button" href="">READ MORE...</a><div class="arrow_above"></div><div class="arrow_below"></div>
+						</div>
+						<div class="main_categories">
+							<h3 class="title_banner">COMMERCIAL</h3>
+							<img src="images/commercial.gif" alt="commercial">
+							<p>PPC Lubricants has been in business of supporting the Commercial market for over 40 years! The most important thing that we have learned is that...</p>
+							<a class="read_more_button" href="">READ MORE...</a><div class="arrow_above"></div><div class="arrow_below"></div>
+						</div>
+						<div class="main_categories">
+							<h3 class="title_banner">INDUSTRIAL</h3>
+							<img src="images/industrial.gif" alt="industrial">
+							<p>Regardless of the industrial market segment that you operate in: Metal, Forestry, Gas or Power Production, Foods, Platics or almost any other field, your lubricant...</p>
+							<a class="read_more_button" href="">READ MORE...</a><div class="arrow_above"></div><div class="arrow_below"></div>
+						</div>
+						<div class="main_categories">
+							<h3 class="title_banner">DIESEL EXHAUST FLUID</h3>
+							<img src="images/diesel_exhaust_fluid.gif" alt="diesel exhuast fluid">
+							<p>As governemntal regulations on emissions from diesel engines become more severe, it has forced vehicle manufacturers to evaluate and adopt new technologies in order to...</p>
+							<a class="read_more_button" href="">READ MORE...</a><div class="arrow_above"></div><div class="arrow_below"></div>
+						</div>
+						<div class="clear"></div>
+				</div><!-- end company_sectors -->
+			</div><!-- end page_wrapper -->
+		</div><!-- end main_content -->
+	</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>jquery mastery</title>
+		<meta name="keywords" content="jQuery, JavaScript, Fun, learning" />
+		<meta name="description" content="learning how to use jQuery" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css" type="text/css" media="all" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+		
+		<script type="text/javascript">
+			//run the following functions/stuff
+			//when the document is ready
+			$(document).ready(function(){
+					
+					$('.energ').slideDown(1000);
+					$('.cloud').fadeIn(2000);
+					$('.save_energy').fadeIn(3000);
+					$('.save_money').slideDown(4000);
+					$('.energy_model').fadeIn(3000, function(){
+					});
+					var describer = $('.event_description').after('<p></p>');
+					describer.removeClass();
+					$('.show').click(function(){
+						describer.addClass('describer').html('The <b>show()</b> function will show an element that is already hidden. If that element is already being displayed then it will do nothing. Click the <b>hide()</b> button to see what <b>show()</b> will do.');
+					});
+					$('.hide').click(function(){
+						describer.addClass('describer').html('The <b>hide()</b> function will hide an element that is already hidden. If that element is already hidden then it will do nothing. Click on the <b>show()</b> function to see what <b>hide()</b> will do.');
+					})
+					$('.toggle').click(function(){
+						$('.energy_model').toggle();
+						describer.attr('class','describer').text('The toggle function will allow you to hide or show an element. This note was used with the text() function so <html> tags cannot be used in the message.');
+					})
+					$('.slidedown').click(function(){
+						$('.energ').slideDown();
+						describer.addClass('describer').html('The <b>slideDown()</b> function will slide an element that is already hidden. If that element is already hidden then it will do nothing. Click on the <b>slideUp()</b> function to see what <b>slideUp()</b> will do.');						
+					})
+					$('.slidetoggle').click(function(){
+						$('.save_money').slideToggle();
+						describer.attr('class','describer').text('The slideToggle() function will allow you to hide or show an element. This note was used with the text() function so <html> tags cannot be used in the message.');
+					})
+					$('.slideup').click(function(){
+						$('.energ').slideUp();
+						describer.addClass('describer').html('The <b>slideUp()</b> function will hide an element if it is not hidden. If that element is already hidden then it will do nothing. Click on the <b>slideUp()</b> function to see what <b>slideUp()</b> will do.');
+					})
+					$('.fadeout').click(function(){
+						$('.cloud').fadeOut(1000);
+					})
+					$('.fadein').click(function(){
+						$('.cloud').fadeIn(2000);
+					})
+					$('#role_select').change(function(){
+						var role = $('#role_select').val();
+						if(role == 'admin'){
+							$('.login_message').addClass('warning').html('You must have administrator privilges to login').fadeIn();
+						}else{
+							$('.login_message').hide();
+						}
+						$('#login').append('<p>You are logging in as ' + role + '</p>');
+					})
+					$('#next_page').click(function(){
+						user = $('#user').val();
+						pass = $('#passwrd').val();
+						valid = true;
+						login_form = $('#login_form');
+						if(user == '' || pass == '')
+						{
+							valid = false;
+						}
+						if(!valid)
+						{
+							$('.login_message').addClass('warning').html('Please enter a correct username and password').fadeIn();
+							return false;
+						}
+						
+						alert('form serialized value: ' + login_form.serialize() + ' ' + login_form.attr('action') + ' is not a vaild page.');
+						$('#page_content').append('<p>The following information was not submitted serialized form:' + login_form.serialize() + '. ' + login_form.attr('action') + ' is not a valid destination. This parargraph was created using the <b>append()</b> function. Mouse over me to see how you can add specific events to elements using the <b>on()</b> function. We were asked to use the <b>live()</b> function, but it has been deprecated in the current version of jquery.</p>')
+						$("p").on({
+							mouseover: function(){
+								$(this).addClass('warning');
+							},
+							mouseout: function(){
+								$(this).removeClass('warning');
+							}
+						})
+						return false;
+						$('#login_form').submit();
+					})
+					// this section is for jQuery UI!
+					$('#tabs').tabs();
+					$('#fromdate').datepicker();
+					$('#todate').datepicker();
+					$('#energy_box').dialog();
+					$('#product_info').accordion();
+			});
+		</script>
+	</head>
+	<body>
+		<div id="energy_box" title="Save Energy!"><p>Sign up now to get a free energy audit!</p></div>
+		<div id="header" class="wrapper">
+			<div id="logo">
+				<img class="energ hidden" src="images/logo_energ.gif"><img class="cloud hidden" src="images/logo_cloud.gif">
+			</div>
+			<h1><span class="save_energy hidden">Save Energy.</span><span class="save_money hidden"> Save Money.</span><span class="energy_model hidden"> Build your Energy Model Today!</span></h1>
+			<div class="clear"></div>
+			<div id="nav">
+				<div id="effects">
+					<h2 id="nav_title">Effects</h2>
+					<p>click on one of the event items below to get a description and see what they do!</p>
+					<ul>
+						<li class="hide">hide()</li>
+						<li class="show">show()</li>
+						<li class="toggle">toggle()</li>
+						<li class="slideup">slideUp()</li>
+						<li class="slidedown">slideDown()</li>
+						<li class="slidetoggle">slideToggle()</li>
+						<li class="fadein">fadeIn()</li>
+						<li class="fadeout">fadeOut()</li>
+					</ul>
+				</div>
+				<div class="event_description"></div>
+			</div><!-- end nav -->
+		</div><!-- end header -->
+		<div id="main_content" class="wrapper">
+			<div id="content_bar">
+				<h1 id="toggle_test">Form</h1>
+				<p>Play around with the form below to see how jQuery can be very useful in verifying user information immediately.</p>
+				<div id="login">
+					<p class="login_message"></p>
+					<form id="login_form" action="process.php" method="post">
+						<label for="role">Select Role:</label>
+						<select id="role_select">
+							<option name="role" value="admin">Administrator</option>
+							<option name="role" value="user">User</option>
+							<option name="role" value="guest">Guest</option>
+						</select>
+						<label for="user">Username:</label>
+						<input id="user" type="text" name="user" />
+						<label for="passwrd">Password:</label>
+						<input id="password" type="password" name="passwrd" />
+						<input id="next_page" type="button" name="login" value="Login" />
+					</form>
+				</div>
+				<div id="page_content"></div>
+				<div id="tabs">
+					<ul>
+						<li><a href="#tabs-1">Save Energy</a></li>
+						<li><a href="#tabs-2">Save Money!</a></li>
+						<li><a href="#tabs-3">Build Your Energy Model</a></li>
+					</ul>
+					<div id="tabs-1">
+						<h2>Save Energy!</h2>
+						<p>At EnergCloud we do more than just save you money. We help to save energy which will ultimately make our earth a bette place to live!</p>
+					</div>
+					<div id="tabs-2">
+						<h2>Save Money!</h2>
+						<p>Our founder has a bachelors degree in finance and knows secondhand how to save you money and find a way to finance your energy plan.</p>
+					</div>
+					<div id="tabs-3">
+						<h2>Buld your Energy Model</h2>
+						<p>Use our online energy modeling software to create an energy model of your home or business to see what your energy cosumption is and even better see what it could be!</p>
+						<h4>Select potential installation date range:</h4>
+						<form action="new_inquiry.php" method="post">
+							<label for="fromdate">From:</label>
+							<input type="text" id="fromdate" name="fromdate" />
+							<label for="todate">To:</label>
+							<input type="text" id="todate" name="todate" />
+							<input type="submit" id="submit" value="continue for further information!" />
+						</form>
+					</div>
+				</div>
+				<h2>Learn more about our proudcts and services!</h2>
+				<div id="product_info">
+					<h3>Energy Audits</h3>
+					<div>
+						<p>If you sign up now you will recieve a First Tier basic energy audit to see what easy things you can do to reduce your energy consumption.</p>
+					</div>
+					<h3>Energy Modeling</h3>
+					<div>
+						<p>With our online energy modeling software you can create your model and track consumption as you go!</p>
+					</div>
+					<h3>Passive Solar Design</h3>
+					<div>
+						<p>Think about your design with the sun in mind! With passive solar design you can design your home to be very energy efficient or not use any energy at all!</p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div><!-- end content_bar -->
+		</div><!-- end main_content -->
+	</body>
+</html>

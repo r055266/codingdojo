@@ -1,0 +1,6 @@
+*{
+	font-family: Arial, Verdana;
+}
+p.signature{
+    color:blue;
+}

@@ -1,0 +1,22 @@
+*{
+    font-family:Arial, Verdana;
+}
+#login, #registration{
+    border: 1px solid;
+    width: 200px;
+    margin: 10px
+}
+#login form, #registration form{
+    margin: 10px;
+}
+label, input{
+    display:block;
+    text-align:left;
+}
+input[type="submit"]{
+    margin: 10px
+}
+div.error{
+    color: red;
+    margin:5px 0px;
+}

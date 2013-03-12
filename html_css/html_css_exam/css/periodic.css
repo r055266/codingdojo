@@ -1,0 +1,85 @@
+*{
+	font-family: Arial, Verdana;
+}
+ul, h1, p{
+	padding:0px;
+	margin:0px;
+}
+p{
+	font-size: 8pt;
+}
+h1{
+	font-size: 14pt;
+	color: #24059e;
+}
+ul li{
+	width: 42px;
+	height: 46px;
+	vertical-align: bottom;
+	border:solid 1px transparent;
+	text-align: center;
+	list-style-type: none;
+	margin-top: 2px;
+	padding: 2px 0px;
+	font-size: 10pt;
+}
+.wrapper{
+	margin: 0px auto;
+	width: 980px;
+}
+.title{
+	color: red;
+}
+.table_indicators{
+	font-size: 10pt;
+	margin: 15px 0px;
+}
+#header_group ul li{
+	color:red;
+	display: inline-block;
+	height:20px ;
+}
+#period_group ul{
+	display:inline-block;
+	vertical-align: bottom;
+}
+	#period_group ul.title li:first-child{
+		height: 20px;
+	}
+ul.alkali li{
+	background: #6698FD;
+	border: 1px solid #326699;
+}
+ul.transition li{
+	background: #FB9998;
+	border: 1px solid #cc6767;
+}
+ul.poor li{
+	background: #F9CC1F;
+	border: 1px solid #cc9916;
+}
+ul.rare li{
+	background: #06CB33;
+	border: 1px solid #039911;
+}
+ul li.filler{
+	width:20px;
+	color: red;
+	vertical-align: middle;
+	background: none;
+	border:1px solid transparent;
+}
+#footer_elements{
+	margin-top:40px;
+}
+	#footer_elements ul li{
+		display: inline-block;
+		vertical-align: bottom;
+	}
+	#footer_elements ul li.label{
+			width:138px;
+			color: red;
+			background: none;
+			border:1px solid transparent;
+		}
+

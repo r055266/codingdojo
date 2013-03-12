@@ -1,0 +1,177 @@
+*{
+	font-family: Arial, Verdana;
+}
+html,body{
+	padding: 0px;
+	margin: 0px;
+}
+h1{
+	margin: 0px;
+	padding: 0px;
+	text-shadow: 0 1px 0 #cec;
+}
+.wrapper{
+	margin: 0px auto;
+	width: 980px;
+}
+.clear{
+	clear:both;
+}
+#header_bar{
+	margin:0px auto;
+	text-align: center;
+}
+#header_bar img{
+	width: 600px;
+	height: 139px;
+	margin: 0px auto;
+	float: left;
+}
+#header_bar p{
+	display:inline;
+	margin: 0px;
+}
+#header_bar img.profile{
+	width: 244px;
+	height: 244px;
+}
+#header{
+	height: 70px;
+	background: #00A063;
+	border-top: 1px solid #888;
+	border-bottom: 5px solid #74A9E0;
+}
+#login{
+	float:right;
+	width: 300px;
+}
+#login_box{
+	float: right;
+	width: 300px;
+	background: #6888AA;
+	box-shadow: 2px 2px 2px #888;
+	border: 1px solid #cec;
+}
+#profile{
+	float:right;
+}
+#main_content{
+	vertical-align: top;
+}
+#message_bar{
+	/*margin-top: 30px;*/
+/*	background: #6888AA;
+*/	display: inline-block;
+	width: 735px;
+/*	margin-right: 76px;
+	box-shadow: 4px 5px 5px #888;
+	border-radius: 6px;
+	padding: 10px 0px;*/
+/*	border: 1px solid #cec;*/
+}
+#message_bar form{
+	text-align: center;
+}
+	#message_bar h2{
+		text-shadow: 1px 0 1px #f5f5f5;
+	}
+#page_content{
+	vertical-align: top;
+	margin-top: 80px;
+	text-align: center;
+	padding-bottom: 20px;
+	margin-bottom: 20px;l
+}
+div.profile{
+	background: #6888AA;
+}
+#page_content img{
+	width:325px;
+	height: 287px;
+}
+#form{
+	border:1px solid #888888;
+	background: #cec;
+	padding: 0px 10px;
+	width: 400px;
+	margin: 0px auto;
+}
+.form_entry{
+	padding: 8px 0px;
+}
+.form_entry label{
+	text-align: right;
+	width: 170px;
+	float: left;
+}
+.user_login{
+	padding-top: 5px;
+}
+.user_login label{
+	text-align: right;
+	width: 100px;
+	float: left;
+	font-size: 9pt;
+	font-weight: bold;
+	padding-right: 10px;
+	padding-top: 5px;
+	text-shadow: 0 1px 0 #cec;
+}
+.entry_error{
+	background: #FFFFC6;
+}
+p.error_message{
+	color: red;
+	font-size: 9pt;
+}
+.required{
+	color: red;
+}
+h3{
+	background: #cecece;
+	border: 1px solid #888888;	
+	padding: 20px;
+	font-size: 12pt;
+	font-weight: normal;
+}
+.error{
+	color: red;
+}
+.success{
+	color: blue;
+}
+input.login{
+	margin: 10px 0px 10px 170px;
+	background: darkcyan;
+	border-color: lightgreen;
+	font-weight: bold;
+}
+input.prayise[type="submit"]{
+	display: block;
+	margin: 0px auto;
+}
+input.comment[type="submit"]{
+	vertical-align: top;
+}
+div.message{
+	padding-top: 10px;
+}
+div.message_content p{
+	background: #f5f5f5;
+	border: 2px solid #74a9e0;
+	margin: 10px;
+}
+div.comment_content p{
+	border: 1px solid #039911;
+	background: #f5f5f5;
+	margin: 5px 10px 5px 100px;
+}
+div.comment_content h5, div.message_content h4{
+	display:inline-block;
+	margin: 5px 0px;
+	font-size: 9pt;
+}
+.comment_content form, .message_content form{
+	display: inline;
+	margin-left: 5px;
+}

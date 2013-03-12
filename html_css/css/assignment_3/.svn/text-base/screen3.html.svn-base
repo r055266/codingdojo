@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>WorldStream</title>
+		<meta name="keywords" content="WordStream, Internet Marketing Software, PPC," />
+		<meta name="description" content="WorldStream Internet Marketing Softward for the Aspiring Traveler" />
+		<link rel="stylesheet" type="text/css" href="css/screen3.css" />
+	</head>
+	<body>
+		<div id="header" class="wrapper">
+			<div id="logo">
+				<img src="images/logo2.gif" alt="company logo"/>
+				<h1><span class="main_title_1">Word</span><span class="main_title_2">Stream</span></h1>
+			</div><!-- end logo -->
+			<div id="nav">
+				<ul>
+					<li><a href="">Products</a></li>
+					<li><a href="">Learn SEM</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">Support</a></li>
+					<li><a href="">AdWords Grader</a></li>
+				</ul>
+				<a id="login" class="button_style_1" href="">Login</a>
+			</div><!-- end nav -->
+			<div class="clear"></div>
+			<div id="banner">
+				<h2>WorldStream Internet Marketing Software</h2>
+			</div><!-- end banner -->
+			<div class="clear"></div>
+		</div><!-- end header -->
+		<div id="main_content" class="wrapper">
+			<div id="info_panel">
+				<div id="flash_panel">
+					<h3>WordStream for PPC</h3>
+					<h4>Drive More Profits Through PPC!</h4>
+					<p>Get Started with <a href="">WordStream's</a> Powerful PPC Platform Today.</p>
+					<a class="demo_button button_style_1" href="">SCHEDULE DEMO</a>
+					<a class="trial_button button_style_2" href="">FREE TRIAL</a>
+					<p class="credit_message">(No Credit Required)</p>
+				</div><!-- end flash_panel -->
+				<div id="adwords">
+					<div id="adwords_box">
+						<h3>How does your AdWords performance measure up?</h3>
+						<p>Get a free, instant report with the WordStream AdWords Performance Grader</p>
+						<a class="graded_button button_style_3" href="">Get Graded Today <span class="arrow1"> ></span><span class="arrow2">></span><span class="arrow3">></span></a>
+					</div><!-- end adwords_box -->
+					<div id="ruler_image"><img src="images/ruler1.gif" alt="ruler"></div>
+				</div><!-- end adwords -->
+			</div><!-- end info_panel -->
+			<div id="page_content">
+				<div id="info_bar">
+					<div id="breadcrumbs">
+						<p><img src="images/house.gif" class="home_icon" alt="return to home icon"><span class="crumb_advance"> > </span><span class="crumb_text">PPC</span></p>
+					</div><!-- end breadcrumbs -->
+					<div id="contact">
+						<div id="contact_image"><img src="images/phone.gif" alt="old school cell phone"></div>
+						<div id="contact_info">
+							<p>Mon-Fri 9 a.m. - 5 p.m.(EST)</p>
+							<p class="phone_number">855.967.3787</p>
+							<p>International: +1.617.963.0555</p>
+						</div>
+					</div><!-- end contact -->
+					<div class="clear"></div>
+				</div><!-- end info_bar -->
+				<div id="page_description">
+					<h2>PPC - Achieve More Efficient Pay-Per Click (PPC) Marketing</h2>
+					<p><span class="ppc_title">PPC</span> (<a href="">pay-per click</a>) search marketing software offers a means for accomplishing two core requirements for PPC optimization:</p>
+					<ul>
+						<li><span class="list_ppc"><span class="ppc_title">PPC Automation</span> - While it would be impossible (and inadvisable!) to automate every aspect of <a href="">pay-per-click advertising</a>, automating away redundant, time-consuming tasks affords you a means of increasing productivity. Often, this means being able to produce an amount of work that would othewise have been unachievable for you and your business.</span></li>
+						<li><span class="list_ppc"><span class="ppc_title">PPC Management</span> - <a href="">PPC management</a> refers to the maintenance and prioritization of <a href="">paid search</a> marketing tasks. Being able to oversee various aspects of your account while assigning each item on a seemingly endless to-do list an appropriate value can make or break an <a href="">online campaign.</a></span></li>
+					</ul>
+					<p>WordStream's <a href="">PPC software</a> is specifically designed to aid in these two <a href="">PPC search engine</a> marketing areas. This pages will show you both the processes the software is automating for you, and the best course of action to take where workflow is concerned.</p>
+					<div id="profit_box">
+						<div id="profit_image">
+							<img src="images/race_flag.gif" alt="blue checker flag">
+						</div>
+						<div id="profit_description"> 
+							<h2>Drive More Profits Through PPC - Try Our Platform FREE</h2>
+							<p>Get instant access to WordStream's innovative <span class="profit_em">Quality Score</span> and <span class="profit_em">Account Management</span> tools through our <span class="profit_em">FREE 7-day Trial</span>. Risk Free, No Credit Card Required and No Automatic Sign-ups.</p>
+							<a class="profit_button button_style_4" href="">Get Started Today!</a>
+						</div>
+						<div class="clear"></div>
+					</div><!-- end profit box -->
+					<h3>Automation And Your PPC Search Campaign</h3>
+					<p>Creating an effective <a href="">AdWords campaign</a> fir search requires a mass of time and effor. WordStream is build to help productize <a href="">pay-per-click campaign</a> labor while recognizing that only certain tasks should be automated for you. Rather than being a</p>
+				</div><!-- page_description -->
+			</div><!-- end page_content -->
+			<div class="clear"></div>
+		</div><!-- end main_content -->
+	</body>
+</html>

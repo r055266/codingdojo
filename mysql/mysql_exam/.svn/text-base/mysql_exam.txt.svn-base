@@ -1,0 +1,42 @@
+1.
+SELECT leads.first_name, leads.last_name, leads.registered_datetime 
+FROM leads
+LEFT JOIN sites ON sites.site_id = leads.site_id
+LEFT JOIN clients ON sites.client_id = clients.client_id
+WHERE clients.client_id = 1;
+
+2.
+SELECT leads.first_name, leads.last_name, leads.registered_datetime 
+FROM leads
+LEFT JOIN sites ON sites.site_id = leads.site_id
+LEFT JOIN clients ON sites.client_id = clients.client_id
+WHERE clients.client_id = 5; 
+
+3.
+SELECT leads.first_name, leads.last_name, leads.registered_datetime 
+FROM leads
+LEFT JOIN sites ON sites.site_id = leads.site_id
+LEFT JOIN clients ON sites.client_id = clients.client_id
+WHERE clients.client_id  IN(1, 5); 
+
+4.
+SELECT leads.first_name, leads.last_name, sites.domain_name
+FROM leads
+LEFT JOIN sites ON sites.site_id = leads.site_id
+ORDER BY leads.first_name;
+
+5.
+SELECT first_name, last_name, registered_datetime
+FROM leads
+WHERE registered_datetime BETWEEN '2012-01-1' AND '2013-03-05';
+
+6.
+SELECT sites.domain_name, CONCAT(clients.first_name, ' ', clients.last_name) client_name
+FROM clients
+LEFT JOIN sites ON sites.client_id =  clients.client_id;
+
+7.
+SELECT GROUP_CONCAT(sites.domain_name SEPARATOR ', ') site_names, CONCAT(clients.first_name, ' ', clients.last_name) client_name
+FROM clients
+LEFT JOIN sites ON sites.client_id =  clients.client_id
+WHERE clients.client_id = 1;

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css" type="text/css" media="all" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.show').click(function(){
+					img_id = $(this).attr('id');
+					$('#'+img_id).hide();
+				});
+				$('#restore').submit(function(){
+					$('.show').show();
+					return false;
+				})
+			});
+		</script>
+		<style type="text/css">
+			img.show{
+				width: 450px;
+				height: 450px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main_content">
+			<img id="img_1" src="images/blah.jpg" alt="" class="show">
+			<img id="img_2" src="images/blah.jpg" alt="" class="show">
+			<img id="img_3" src="images/blah.jpg" alt="" class="show">
+			<img id="img_4" src="images/blah.jpg" alt="" class="show">
+			<img id="img_5" src="images/blah.jpg" alt="" class="show">
+			<img id="img_6" src="images/blah.jpg" alt="" class="show">
+			<img id="img_7" src="images/blah.jpg" alt="" class="show">
+			<img id="img_8" src="images/blah.jpg" alt="" class="show">
+			
+			<form id="restore" action="process.php" method="post">
+				<input type="submit" value="Restore">
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+		*{
+			font-family: Arial, Verdana;
+		}
+		#main_content{
+			margin: 0px auto;
+			width: 900px;
+		}
+		#form{
+			width: 400px;
+			border:1px solid #888888;
+			background: #cecece;
+			padding: 0px 10px;
+		}
+		.form_entry{
+			padding: 8px 0px;
+		}
+		.form_entry label{
+			text-align: right;
+			width: 170px;
+			float: left;
+		}
+		.entry_error{
+			background: #FFFFC6;
+		}
+		p.error_message{
+			color: red;
+			font-size: 9pt;
+		}
+		.required{
+			color: red;
+		}
+		h3{
+			background: #cecece;
+			border: 1px solid #888888;	
+			padding: 20px;
+			font-size: 12pt;
+			font-weight: normal;
+		}
+		.error{
+			color: red;
+		}
+		.success{
+			color: blue;
+		}
+		input[type="submit"]{
+			margin: 20px 0px 20px 170px;
+		}

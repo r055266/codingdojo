@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Html page reference</title>
+		<meta name="keywords" content="html, reference, html practice, " />
+		<meta name="description" content="this page is used as an html structure reference." />
+	<style type="text/css">
+		div
+		{
+			border: 1px solid black;
+		}
+	</style>
+	</head>
+	<body>
+		<div>
+			Use heading tags for headings only!
+			<h1>Most important tag</h1>
+			<h2>Second most important tag</h2>
+			<h3>Third most important tag</h3>
+			<h4>This is the 4th most important tag</h4>
+			<h5>This is the 5th most important tag</h5>
+			<div>
+				Insert Image here!
+				<img src="images/michael-jordan-dunk.jpg" alt="Michael Jordan's Freethrow Dunk" width="300" height="250"/>
+			</div>
+			<div>
+			<h2>Greatest Basketball Players EVER</h2>
+				<p>Here is an ordered list!</p>
+				<ol>
+					<li>Michael Jordan</li>
+					<li>Magic Johnson</li>
+					<li>Larry Bird</li>
+				</ol>
+			</div>
+			<div>
+			<h2>Favorite Movies</h2>
+				<p>This is an unordered list!</p>
+				<ul>
+					<li>Dumb and Dumber</li>
+					<li>Hoosiers</li>
+					<li>Inception</li>
+				</ul>
+			</div>
+			<p>Here is a table!</p>
+			<table>
+				<thead>
+					<tr>
+						<th>User</th>
+						<th>Account Number</th>
+						<th>Password</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>jayzee67</td>
+						<td>995674</td>
+						<td>99problems</td>
+					</tr>
+					<tr>
+						<td>bigpoppa</td>
+						<td>1125543</td>
+						<td>momoney</td>
+					</tr>
+					<tr>
+						<td>2Pack</td>
+						<td>8844756</td>
+						<td>changes</td>
+					</tr>	
+				</tbody>	
+			</table>
+			<p>here is a form!</p>
+			<form action="verify.php" method="post">
+				<label for"name">Name:</label>
+				<input type="text" name="name" id="name" /><br>
+				<label for="email">Email Address:</label>
+				<input type="text" name="email_address" id="email" /><br>
+				<label for="password">Password:</label>
+				<input type="password" name-"password" id="password" /><br>
+				
+				<label>Gender</label>
+				<input type="radio" name="gender" value="male" />Male
+				<input type="radio" name="gender" value="female" />Female
+				<br>
+
+				<label>Interest(s):</label><br>
+				<input type="checkbox" name="interest[]" value="sports" />Sports<br>
+				<input type="checkbox" name="interest[]" value="computers" />Computers<br>
+				<input type="checkbox" name="interest[]" value="outdoors" />Outdoors<br>
+				<label>Frequency</label>
+				<select>
+					<option name="frequency" value="daily">Daily</option>
+					<option name="frequency" value="weekly">Weekly</option>
+					<option name="frequency" value="monthly">Monthly</option>
+				</select><br>
+
+				<input type="hidden" name="company" value="codingdojo" />
+				<input type="submit" value="Subscribe" />
+			</form>
+		</div>
+	</body>
+</html>

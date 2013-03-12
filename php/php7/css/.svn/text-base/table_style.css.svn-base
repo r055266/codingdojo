@@ -1,0 +1,21 @@
+#client_info{
+	font-family: Arial, Verdana;
+	border-spacing: 0px;
+	padding: 0px;
+	color: #444444;
+}
+#client_info tr td:first-child{
+	font-weight: bold;
+	font-size: 12pt;
+}
+#client_info tr td, #client_info tr th{
+	padding: 8px;
+	font-size: 12pt;
+	text-align: left;
+	border: 1px solid #cecece;
+} 
+.reverse
+{
+	background: #444444;
+	color: white;
+}

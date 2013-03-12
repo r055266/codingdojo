@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Dojo Dragons</title>
+		<meta name="keywords" content="Dojo Dragons, Coding Dojo, Silicon Valley, Dojo Dragons Group" />
+		<meta name="description" content="This is a page for the Dojo Dragon Group at Coding Dojo in Silicon Valley." />
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="container">
+				<h1>Dojo Dragon Home Page</h1>
+				<p>
+					<i>The Dojo Dragon's may have the smallest group in size, but they have the mightiest coding fire. They have the ability to conquer any coding force that stands before them. Those that do not belong please stay and admire only. Have a look at <a href="http://www.codingdojo.co" title="Coding Dojo">Coding Dojo</a> for some more information about the how you can be your own <b>Dojo Dragon</b></i>.
+				</p>
+				<div id="content_top"> 
+					<h2>Dojo Dragon List</h2>
+					<ul>
+						<li>White</li>
+						<li>Yellow</li>
+						<li>Green</li>
+						<li>Red</li>
+						<li>Black</li>
+					</ul>
+					<h2>Dojo Dragon Levels</h2>
+					<table id="dojo_dragon_levels">
+						<thead>
+							<tr>
+								<th>White Dragon</th>
+								<th>Yellow Dragon</th>
+								<th>Green Dragon</th>
+								<th>Red Dragon</th>
+								<th>Black Dragon</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>HTML, CSS, JQuery, JQueryUI</td>
+								<td><span style="background:yellow;">PHP, Ajax, MySQL, Database Design, Agile</span></td>
+								<td><span style="background:green;">OOP, Git, SVN, Ruby, Linux and Cloud(AWS)</span></td>
+								<td><span style="background:red;">Ruby on Rails, CodeIgniter, Underscore, SASS</span></td>
+								<td><span style="background:black; color:white;">Node.JS, MongoDB, Redis, TDD, Python/Django, C#, Java</span></td>
+							</tr>
+							<tr>
+								<td>Level 1</td>
+								<td><span style="background:yellow;">Level 1-2</span></td>
+								<td><span style="background:green;">Level 3</span></td>
+								<td><span style="background:red;">Level 3-4</span></td>
+								<td><span style="background:black; color:white;">Level 4</span></td>
+							</tr>
+						</tbody>	
+					</table>
+				</div><!-- end content_top -->
+			</div><!-- end container -->
+			<div id="dojo_form">
+				<h2>Dojo Dragon's Please fill out the form below:</h2>
+				<h3>If you are not affiliated with the Dojo Dragons... We will know.</h3>
+				<form action="process.php" method="post">
+					<label for="fullname">Full Name:</label>
+					<input type="text" name="fullname" id="fullname" /><br>
+					<label for="email">Email Address:</label>
+					<input type="text" name="email" id="email" /><br>
+					<label for="phone">Phone:</label>
+					<input type="text" name="phone" id="phone" /><br>
+					
+					<h3>Check all the places that you would be interested in meeting for group discussion:</h3>
+					<label>Group Meeting Places:</label><br>
+					<input type="checkbox" name="places[]" value="petes"/>Pete's Coffee<br>
+					<input type="checkbox" name="places[]" value="nasa"/>NASA<br>
+					<input type="checkbox" name="places[]" value="dojo"/>Dojo Couches<br>
+					<input type="checkbox" name="places[]" value="google"/>Google HQ<br>
+
+					<h3>Select the meeting time that works best for you</h3>
+					<label>Meeting Time</label><br>
+					<input type="radio" name="meeting_times" value="time1" />6AM-7AM<br>
+					<input type="radio" name="meeting_times" value="time2" />7AM-8AM<br>
+					<input type="radio" name="meeting_times" value="time3" />8PM-9PM<br>
+
+					<input type="hidden" name="group" value="dojodragons" />
+					<input type="submit" value="Enter the Dragon" />
+				</form>
+			</div> <!-- end dojo_form -->
+		</div> <!-- end wrapper -->
+		<div id="footer">
+			<p>Dojo Dragons&copy; is a not a registered trademark, but it looks cool to have the little symbol above it.</p>
+		</div><!-- end Footer -->
+	</body>
+</html>
+

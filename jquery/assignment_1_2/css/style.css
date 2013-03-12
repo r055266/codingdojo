@@ -1,0 +1,93 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-family: Arial, Verdana;
+}
+.wrapper{
+	margin: 0px auto;
+}
+.clear{
+	clear: both;
+}
+.hidden{
+	display:none;
+}
+.save_energy{
+	color: blue;
+}
+.save_money{
+	color: green;
+}
+.energy_model{
+	color: orange;
+}
+.describer{
+	padding: 10px;
+	font-size: 10pt;
+	font-style: italic;
+}
+.warning{
+	color: red;
+	margin: 10px;
+}
+.flash{
+	background: #888888;
+}
+#header{
+
+}
+#logo{
+	float: left;
+	height: 167px;
+}
+#logo img{
+	height: 167px;
+}
+#nav_title{
+	margin: 10px;
+}
+#nav{
+	height: 150px;
+}
+	#nav p{
+		margin: 10px;
+	}
+	#nav ul{
+		padding: 10px 0px;
+	}
+	#nav ul li{
+		list-style-type: none;
+		display:inline;
+		margin: 10px 20px;
+		color: green;
+		cursor: pointer;
+	}
+	#nav ul li:hover{
+		color: grey;
+	}
+#main_content{
+	width: 960px;	
+	min-height: 600px;
+}
+#content_bar{
+	height: 50px;
+}
+#login{
+	border: 1px solid #888888;
+	margin: 10px;
+	padding: 15px;
+	background-color: #cecece;
+}
+#product_info h3{
+	padding-left: 30px;
+}
+.highlight{
+	width:200px;
+	height: 400px;
+	margin: 10px;
+	padding: 10px;
+	float: left;
+}
+#footer{
+	height: 50px;
+}
