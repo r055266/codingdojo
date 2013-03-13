@@ -3,25 +3,18 @@
 class Main extends CI_Controller {
 
 	protected $view_data = array();
-	protected $user_session = NULL;
-
-	// public function __construct()
-	// {
-	// 	parent::__construct();
-	// 	$this->user_session = $this->session->user_data('user_session');
-	// }
-
-	public function login()
+	
+	public function __construct()
 	{
-		$this->load->view('login', $this->view_data);
+		parent::__construct();
+		$this->view_data['session'] = $this->session->userdata('user_session');
 	}
 
-	public function users()
+	public function logout()
 	{
-		$this->load->model('User_model');
-		$this->view_data['users'] = $this->User_model->get_users();
-
-		$this->load->view('users', $this->view_data);
+		$this->session->sess_destroy();
+		redirect(base_url('login'));
 	}
+
 }
 ?>

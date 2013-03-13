@@ -18,5 +18,15 @@ input[type="submit"]{
 }
 div.error{
     color: red;
-    margin:5px 0px;
+    margin:5px 5px;
+}
+div.success{
+    color: blue;
+    margin:5px 5px;
+}
+div#user_info{
+    border: 1px solid;
+    width: 400px;
+    padding-left:20px;
+    padding-bottom: 20px;
 }

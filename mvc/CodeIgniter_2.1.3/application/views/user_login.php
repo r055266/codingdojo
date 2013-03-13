@@ -8,16 +8,20 @@
 <body>
 	<p>Login</p>
 	<div id="login">
+		<div class="error"><?php if(isset($login_error)){ echo $login_error; } ?></div>
 		<?php echo form_open('login/process_login'); ?>
-			<label for="email">Email</label>
-			<input type="text" name="email">
+			<label for="email_login">Email</label>
+			<?php echo form_error('email_login'); ?>
+			<input type="text" name="email_login">
 			<label for="">Password</label>
-			<input type="password" name="password">
+			<?php echo form_error('password_login'); ?>
+			<input type="password" name="password_login">
 			<input type="submit" name="submit" value="Login">
 		</form>
 	</div>
 	<p>Register</p>
 	<div id="registration">
+		<div class="success"><?php if(isset($success)){ echo $success; } ?></div>
 		<?php echo form_open('login/process_registration'); ?>
 			<label for="email">Email:</label>
 			<?php echo form_error('email'); ?>
