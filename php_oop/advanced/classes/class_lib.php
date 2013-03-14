@@ -158,9 +158,13 @@ class Users extends Main
 
 	function get_users_table()
 	{
-		$sql = "SELECT id client_id, first_name, last_name, email, DATE(joined_datetime) joined_datetime, CONCAT('<a href=\"leads.php?client_id=', id, '\">View Leads') actions FROM clients";
+		$link_start = '<a href=\"leads.php?client_id=';
+		$link_end = '\">View Leads</a>';
 		
-		$data = $this->fetch_all($sql);
+		$sql = "SELECT id client_id, first_name, last_name, email, DATE(joined_datetime) joined_datetime, CONCAT('" .$link_start. "', id, '" .$link_end. "') actions FROM clients";
+		
+		die(htmlentities($sql));
+		$data = $this->fetch_all(var_dump($sql));
 
 		return $this->return_table($data);
 	}
