@@ -6,14 +6,22 @@ require_once('nav.php');
         <!-- Main hero unit for a primary marketing message or call to action -->
         <div class="hero-unit">
           <h2>Signin</h2>
-          <?php echo form_open('login/process_login'); ?>
+          <?php 
+            if(isset($login_error))
+            { 
+              echo '<div class="alert alert-error">' . $login_error . '</div>'; 
+            } 
+          ?>
+          <?php echo form_open(base_url('process/login')); ?>
             <div class="control-group">
+              <?php echo form_error('email'); ?>
               <label class="control-label" for="email">Email Address:</label>
               <div class="controls">
                 <input type="text" name="email">
               </div>
             </div>
             <div class="control-group">
+              <?php echo form_error('password'); ?>
               <label class="control-label" for="password">Password:</label>
               <div class="controls">
                 <input type="password" name="password">

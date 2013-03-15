@@ -6,6 +6,16 @@ class Signin extends Main {
 	
 	function index()
 	{
+		if(isset($this->view_data['session']['logged_in']))
+		{
+			$admin = '';
+
+			if($this->view_data['session']['user_level'] == 'admin')
+			{
+				$admin = '/admin';
+			}
+				redirect(base_url('dashboard'.$admin));
+		}
 		// Add meta tags for this page here 
 		$this->view_data['meta'] = array(
 									array('description', 'content' => 'Signin Page'),

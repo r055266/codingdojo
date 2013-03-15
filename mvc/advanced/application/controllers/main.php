@@ -8,12 +8,15 @@ class Main extends CI_Controller {
 	{
 		parent::__construct();
 		$this->view_data['session'] = $this->session->userdata('user_session');
+
+		// enable this functin to debug mysql and see performace statistics.
+		//$this->output->enable_profiler(true);
 	}
 
 	public function logout()
 	{
 		$this->session->sess_destroy();
-		redirect(base_url('login'));
+		redirect(base_url('home'));
 	}
 
 }

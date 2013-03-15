@@ -10,8 +10,14 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <?php
+                $button_style = 'btn-danger';
+                $link = 'main/logout';
+                $link_text = 'Logout';
                 if(!isset($session['logged_in']))
                 {
+                  $button_style = 'btn-primary';
+                  $link = 'signin';
+                  $link_text = 'Signin';
               ?> 
                 <li class="active"><a href="#">Home</a></li>
               <?php   
@@ -25,11 +31,7 @@
                 }
               ?>
             </ul>
-            <form class="navbar-form pull-right">
-              <input class="span2" type="text" placeholder="Email">
-              <input class="span2" type="password" placeholder="Password">
-              <button type="submit" class="btn">Sign in</button>
-            </form>
+                <a class="btn <?php echo $button_style; ?> pull-right" href="<?php echo base_url($link) .'">'.$link_text; ?></a>
           </div><!--/.nav-collapse -->
         </div>
       </div>
