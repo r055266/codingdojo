@@ -1,4 +1,5 @@
 <?php 
+// die(var_dump($user));
 require_once('head.php');
 require_once('nav.php');
 ?>
@@ -16,13 +17,17 @@ require_once('nav.php');
 	          <?php 
 	            if(isset($success))
 	            {
-	              echo $success;
+	              echo '<div class="alert alert-success">' . $success . '</div>';
 	            } 
+	            elseif(isset($failure))
+	            {
+	            	echo '<div class="alert alert-error">' . $failure . '</div>';
+	            }
 	          ?>
 	          	<div class="row">
 	          		<div class="boxborder span4">
 	          			<h5>Edit Information</h5>
-						<?php echo form_open(base_url('process/edit_information/'.$session['id'])); ?>
+						<?php echo form_open(base_url('process/edit_information/'.$user[0]->id)); ?>
 			            <div class="control-group">
 			              <?php echo form_error('email'); ?>
 			              <label class="control-label" for="email">Email Address:</label>
@@ -44,6 +49,10 @@ require_once('nav.php');
 			                <input type="text" name="last_name" value="<?php echo $user[0]->last_name;?>">
 			              </div>
 		            	</div>
+		            	<?php 
+		            	if($session['user_level'] == 'admin') 
+		            	{
+		            	?>
 		          		<div class="control-group">
 			              <?php echo form_error('user_level'); ?>
 			              <label class="control-label" for="user_level">User Level:</label>
@@ -54,6 +63,9 @@ require_once('nav.php');
 			               	</select>
 			              </div>
 		            	</div>
+		            	<?php 
+		            	} 
+		            	?>
 			            <div class="control-group">
 			              <div class="controls">
 			                <button type="submit" class="btn btn-success">Save</button>
@@ -63,7 +75,7 @@ require_once('nav.php');
 			         </div><!-- end span4 -->
 			         <div class="boxborder span4 offset1">
 			         	<h5>Change Password</h5>	            	
-	        			<?php echo form_open(base_url('process/change_password/'.$session['id'])); ?> 
+	        			<?php echo form_open(base_url('process/change_password/'.$user[0]->id)); ?> 
 			           	<div class="control-group">
 			              <?php echo form_error('password'); ?>
 			              <label class="control-label" for="password">Password:</label>
@@ -89,13 +101,14 @@ require_once('nav.php');
 			  	<?php 
 			  		if($session['user_level'] != 'admin')
 			  		{
-			  			echo form_open(base_url('process/edit_description/'.$session['id'])); 
+			  			echo form_open(base_url('process/edit_description/'.$user[0]->id)); 
 			  	?>
 				<div class="row">
 					<div class="boxborder span9">
 						<h5>Change Description</h5>	
 						<div class="row">
 							<div class="span9">
+								<?php echo form_error('description'); ?>
 								<textarea class="span9" name="description" id="description"></textarea>
 							</div>
 						</div>

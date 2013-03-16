@@ -9,26 +9,23 @@ class Dashboard extends Main {
 	function __construct()
 	{
 		parent::__construct();
+		
+		if(!$this->logged_in)
+		{
+			redirect(base_url('signin'));
+		}
+
 		$this->load->library('table');
 		$this->load->model('User_model');
 		
 
 		$tmpl = array('table_open' => '<table class="table table-striped">');
 		$this->table->set_template($tmpl);
-
-		if(!$this->view_data['session']['logged_in'])
-		{
-			redirect(base_url('signin'));
-		}
-		elseif($this->view_data['session']['user_level'] == 'admin')
-		{
-			$this->user_level = 'admin';
-		}
 	}
 
 	function index()
 	{
-		if($this->user_level == 'admin')
+		if($this->admin)
 		{
 			redirect(base_url('dashboard/admin'));
 		}
@@ -58,7 +55,7 @@ class Dashboard extends Main {
 
 	function admin()
 	{
-		if($this->user_level != 'admin')
+		if(!$this->admin)
 		{
 			redirect(base_url('dashboard'));
 		}

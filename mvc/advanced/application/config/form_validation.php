@@ -14,7 +14,7 @@ $config = array(
                                          )
                                     ),
 
-                 'process/registration' => array(
+                 'user_validate' => array(
                                     array(
                                             'field' => 'email',
                                             'label' => 'Email',
@@ -58,7 +58,7 @@ $config = array(
                                             'rules' => 'trim|required|xss_clean'
                                          )
                                     ),
-                 'process/change_password' => array(
+                 'change_password' => array(
                                     array(
                                             'field' => 'password',
                                             'label' => 'Password',
@@ -69,6 +69,13 @@ $config = array(
                                             'label' => 'Password Confirmation',
                                             'rules' => 'trim|required|md5'
                                          )
-                                    )
+                                    ),
+                 'description' => array(
+                                    array(
+                                            'field' => 'description',
+                                            'label' => 'Description',
+                                            'rules' => 'trim|required'
+                                         )
+                 					)
                );
 ?>

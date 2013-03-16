@@ -1,6 +1,12 @@
 <?php 
 require_once('head.php');
 require_once('nav.php');
+
+$your_profile = FALSE;
+if($session['id'] == $user[0]->id)
+{
+	$your_profile = TRUE;
+}
 ?>
     <div class="container">
         <!-- Main hero unit for a primary marketing message or call to action -->
@@ -16,8 +22,20 @@ require_once('nav.php');
 					<p>User ID: #<?php echo $user[0]->id; ?></p>
 					<p>Email Address: <?php echo $user[0]->email; ?></p>
 					<p>Description: <?php echo $user[0]->description; ?></p>
-					<a href="<?php echo base_url('users/edit/'.$user[0]->id)  ?>">Edit Profile</a>
-					<h3>Leave a message for <?php echo $user[0]->first_name; ?></h3>
+					<?php 
+						if($your_profile)
+						{
+						 echo '<a href="' . base_url('users/edit/'.$user[0]->id) . '">Edit Profile</a>';
+						}
+					?>
+					<h3>Leave a message
+					<?php 
+						if(!$your_profile)
+						{
+							echo ' for '.$user[0]->first_name; 
+						}
+					?>
+					</h3>
 	        	<?php 
 	        	}
 

@@ -14,7 +14,7 @@ require_once('nav.php');
             <h2>Manage Users</h2>
           </div>
           <div class="span3">
-            <button class="btn btn-primary">Add new</button>
+            <a class="btn btn-primary pull-right" href="<?php echo base_url('users/new_user'); ?>">Add new</a>
           </div>
         </div>
         <?php

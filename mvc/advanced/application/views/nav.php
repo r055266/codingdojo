@@ -6,7 +6,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">EnergCloud</a>
+          <a class="brand" href="<?php echo base_url('home'); ?>">EnergCloud</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <?php
@@ -19,14 +19,14 @@
                   $link = 'signin';
                   $link_text = 'Signin';
               ?> 
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="<?php echo base_url('home'); ?>">Home</a></li>
               <?php   
                 }
                 else
                 {
               ?>
-                <li><a href="#about">Dashboard</a></li>
-                <li><a href="#contact">Profile</a></li>
+                <li><a href="<?php echo base_url('dashboard'); ?>">Dashboard</a></li>
+                <li><a href="<?php echo base_url('users/show/'.$session['id']); ?>">Profile</a></li>
               <?php 
                 }
               ?>
