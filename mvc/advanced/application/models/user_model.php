@@ -36,8 +36,8 @@ class User_model extends CI_Model{
 
 	public function users()
 	{
-		$user_link_start = '<a href=\"' . base_url() . 'users/show/';
-		$user_link_mid = '\">';
+		$user_link_start = '<a href="' . base_url() . 'users/show/';
+		$user_link_mid = '">';
 
 		$sql = "SELECT users.id ID, CONCAT('" . $user_link_start . "',users.id, '" . $user_link_mid . "',users.first_name,' ',users.last_name,'</a>') Name, users.email, DATE_FORMAT(created_at, '%b %D %Y') created_at, access.user_level 
 				FROM users 

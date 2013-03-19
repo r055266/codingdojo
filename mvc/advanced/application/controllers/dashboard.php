@@ -76,6 +76,14 @@ class Dashboard extends Main {
 		// Add any additional javascript files here.
 		// $this->view_data['scripts'] = array(asset_url('js/sample_js.js'));
 
+		$this->view_data['javascript'] = '$("a#remove").click(function(){';
+		$this->view_data['javascript'] .= 'var del = confirm(\'Are you sure you want to delete this user?\');';
+		$this->view_data['javascript'] .= 'if(!del)';
+		$this->view_data['javascript'] .= '{';
+		$this->view_data['javascript'] .= 'return false;';
+		$this->view_data['javascript'] .= '}';
+		$this->view_data['javascript'] .= '});';
+
 		$this->load->model('User_model');
 		$this->view_data['table'] = $this->table->generate($this->User_model->admin_users());
 		$this->view_data['admin'] = true;
