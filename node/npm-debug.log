@@ -1,0 +1,59 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'Jade' ]
+2 info using npm@1.2.14
+3 info using node@v0.10.0
+4 verbose read json /Library/WebServer/Documents/sitedev/randall_frisk/dojo.energcloud.com/node/package.json
+5 verbose read json /Library/WebServer/Documents/sitedev/randall_frisk/dojo.energcloud.com/node/node_modules/express/package.json
+6 verbose read json /Library/WebServer/Documents/sitedev/randall_frisk/dojo.energcloud.com/node/node_modules/mysql/package.json
+7 verbose read json /Library/WebServer/Documents/sitedev/randall_frisk/dojo.energcloud.com/node/node_modules/nodemon/package.json
+8 verbose read json /Library/WebServer/Documents/sitedev/randall_frisk/dojo.energcloud.com/node/node_modules/socket.io/package.json
+9 verbose read json /Library/WebServer/Documents/sitedev/randall_frisk/dojo.energcloud.com/node/package.json
+10 verbose cache add [ 'Jade', null ]
+11 verbose cache add name=undefined spec="Jade" args=["Jade",null]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'Jade',
+12 verbose parsed url   path: 'Jade',
+12 verbose parsed url   href: 'Jade' }
+13 silly lockFile f492b4d3-Jade Jade
+14 verbose lock Jade /Users/friskslalom6/.npm/f492b4d3-Jade.lock
+15 silly lockFile f492b4d3-Jade Jade
+16 silly lockFile f492b4d3-Jade Jade
+17 verbose addNamed [ 'Jade', '' ]
+18 verbose addNamed [ null, '' ]
+19 silly lockFile fe14094e-Jade Jade@
+20 verbose lock Jade@ /Users/friskslalom6/.npm/fe14094e-Jade.lock
+21 silly addNameRange { name: 'Jade', range: '', hasData: false }
+22 verbose url raw Jade
+23 verbose url resolving [ 'https://registry.npmjs.org/', './Jade' ]
+24 verbose url resolved https://registry.npmjs.org/Jade
+25 info trying registry request attempt 1 at 14:36:14
+26 http GET https://registry.npmjs.org/Jade
+27 http 404 https://registry.npmjs.org/Jade
+28 silly registry.get cb [ 404,
+28 silly registry.get   { server: 'CouchDB/1.2.1 (Erlang OTP/R15B03)',
+28 silly registry.get     date: 'Tue, 19 Mar 2013 21:36:17 GMT',
+28 silly registry.get     'content-type': 'application/json',
+28 silly registry.get     'content-length': '52',
+28 silly registry.get     'cache-control': 'must-revalidate' } ]
+29 silly lockFile fe14094e-Jade Jade@
+30 silly lockFile fe14094e-Jade Jade@
+31 error 404 'Jade' is not in the npm registry.
+31 error 404 You should bug the author to publish it
+31 error 404
+31 error 404 Note that you can also install from a
+31 error 404 tarball, folder, or http url, or git url.
+32 error System Darwin 11.4.0
+33 error command "node" "/usr/local/bin/npm" "install" "Jade"
+34 error cwd /Library/WebServer/Documents/sitedev/randall_frisk/dojo.energcloud.com/node
+35 error node -v v0.10.0
+36 error npm -v 1.2.14
+37 error code E404
+38 verbose exit [ 1, true ]
